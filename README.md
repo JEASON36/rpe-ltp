@@ -1,5 +1,6 @@
 # rpe-ltp
 how to use rpe-ltp in your computer?
+
 1.在终端中采用ffmpeg命令： ffmpeg -i input.wav -f s16le -ar 8000 -ac 1 -acodec pcm_s16le AU_output_Encoder_input.pcm  将input.wav转换为AU_output_Encoder_input.pcm文件，因为rpe-ltp要求的输入为PCM后缀的文件，即未封装的语音文件。
 
 2.运行encoder-rpe-ltp，将输入的AU_output_Encoder_input.pcm进行编码，输入为encoder_output.pcm。
